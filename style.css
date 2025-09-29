@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0f0f0f;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+header {
+  background: #1a1a1a;
+  padding: 20px 0;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.logo span {
+  color: #00ffc3;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #00ffc3;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero {
+  padding: 100px 0;
+  text-align: center;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+
+.hero .highlight {
+  color: #00ffc3;
+}
+
+.projects, .about, .contact {
+  padding: 80px 0;
+}
+
+.projects h2, .about h2, .contact h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.contact ul {
+  list-style: none;
+}
+
+.contact a {
+  color: #00ffc3;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: #888;
+}
+section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease-out;
+}
